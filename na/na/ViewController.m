@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WatchScrollViewBounds.h"
 
 #define MZLog(fmt, ...) NSLog((@"%s\n" fmt), __FUNCTION__, ##__VA_ARGS__)
 
@@ -130,6 +131,13 @@ MZLog(@"lb.bounds: %@ \nlb.frame: %@", NSStringFromCGRect(self.lb.bounds), NSStr
         [self logViewInfo];
     }];
 }
+
+- (IBAction)doWatchAction:(id)sender
+{
+    WatchScrollViewBounds *page = [WatchScrollViewBounds new];
+    [self.navigationController pushViewController:page animated:YES];
+}
+
 
 #pragma mark Display Debug Info.
 

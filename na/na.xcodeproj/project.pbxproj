@@ -15,6 +15,7 @@
 		4D8403C41DB09DB300A62D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8403C21DB09DB300A62D06 /* LaunchScreen.storyboard */; };
 		4D8403CF1DB09DB300A62D06 /* naTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8403CE1DB09DB300A62D06 /* naTests.m */; };
 		4D8403DA1DB09DB300A62D06 /* naUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8403D91DB09DB300A62D06 /* naUITests.m */; };
+		4DC2D3961DBCAC53008AD2C1 /* WatchScrollViewBounds.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2D3951DBCAC53008AD2C1 /* WatchScrollViewBounds.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		4D8403D51DB09DB300A62D06 /* naUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = naUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8403D91DB09DB300A62D06 /* naUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = naUITests.m; sourceTree = "<group>"; };
 		4D8403DB1DB09DB300A62D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC2D3941DBCAC53008AD2C1 /* WatchScrollViewBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchScrollViewBounds.h; sourceTree = "<group>"; };
+		4DC2D3951DBCAC53008AD2C1 /* WatchScrollViewBounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchScrollViewBounds.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				4D8403B81DB09DB300A62D06 /* AppDelegate.m */,
 				4D8403BA1DB09DB300A62D06 /* ViewController.h */,
 				4D8403BB1DB09DB300A62D06 /* ViewController.m */,
+				4DC2D3941DBCAC53008AD2C1 /* WatchScrollViewBounds.h */,
+				4DC2D3951DBCAC53008AD2C1 /* WatchScrollViewBounds.m */,
 				4D8403BD1DB09DB300A62D06 /* Main.storyboard */,
 				4D8403C01DB09DB300A62D06 /* Assets.xcassets */,
 				4D8403C21DB09DB300A62D06 /* LaunchScreen.storyboard */,
@@ -275,6 +280,7 @@
 			files = (
 				4D8403BC1DB09DB300A62D06 /* ViewController.m in Sources */,
 				4D8403B91DB09DB300A62D06 /* AppDelegate.m in Sources */,
+				4DC2D3961DBCAC53008AD2C1 /* WatchScrollViewBounds.m in Sources */,
 				4D8403B61DB09DB300A62D06 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +511,7 @@
 				4D8403E01DB09DB300A62D06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D8403E11DB09DB300A62D06 /* Build configuration list for PBXNativeTarget "naTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +520,7 @@
 				4D8403E31DB09DB300A62D06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D8403E41DB09DB300A62D06 /* Build configuration list for PBXNativeTarget "naUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				4D8403E61DB09DB300A62D06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
