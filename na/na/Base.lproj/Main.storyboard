@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GsF-hr-1W2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqP-yC-bRw">
+                                <color key="backgroundColor" red="0.67641044463087252" green="0.78554949664429441" blue="0.98773070469798663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9CY-s1-Y3u"/>
+                                    <constraint firstAttribute="width" constant="177" id="Ob0-s2-eOi"/>
+                                </constraints>
+                                <state key="normal" title="复位">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doResetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xsk-X7-HbF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exl-vh-SlC">
+                                <color key="backgroundColor" red="0.67641044459999999" green="0.78554949659999995" blue="0.98773070470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="8QN-r6-Tgq"/>
+                                    <constraint firstAttribute="height" constant="30" id="NQp-fJ-OAK"/>
+                                </constraints>
+                                <state key="normal" title="改变redView的 bounds">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doChangeRedViewBounds:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDV-dq-xsh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYq-o7-BSi">
+                                <color key="backgroundColor" red="0.67641044459999999" green="0.78554949659999995" blue="0.98773070470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HaH-MG-per"/>
+                                    <constraint firstAttribute="width" constant="177" id="zGh-LS-9xr"/>
+                                </constraints>
+                                <state key="normal" title="改变yellowView的 bounds">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doChangeYellowViewBounds:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSo-1S-UEk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSB-95-zTE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="RWf-uv-rGI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS开发" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqs-7h-0r1">
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.41960784309999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="hQ2-7G-aRQ"/>
+                                    <constraint firstAttribute="height" constant="39" id="iO6-UA-U3s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="aqP-yC-bRw" secondAttribute="trailing" constant="83" id="84k-KO-Wlu"/>
+                            <constraint firstItem="exl-vh-SlC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="8bV-wz-EVf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WYq-o7-BSi" secondAttribute="trailing" constant="83" id="Kov-2N-WQk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PSB-95-zTE" secondAttribute="bottom" constant="176" id="MSf-nb-Xcm"/>
+                            <constraint firstItem="rqs-7h-0r1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="Mnn-Nr-DUk"/>
+                            <constraint firstItem="exl-vh-SlC" firstAttribute="top" secondItem="aqP-yC-bRw" secondAttribute="bottom" constant="18" id="Sbj-df-bqT"/>
+                            <constraint firstItem="aqP-yC-bRw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="448" id="WkG-0c-Y11"/>
+                            <constraint firstItem="PSB-95-zTE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="ZNV-VV-QHW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="exl-vh-SlC" secondAttribute="trailing" constant="83" id="ciU-vn-Ueo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PSB-95-zTE" secondAttribute="trailing" constant="-16" id="eNY-G7-fdu"/>
+                            <constraint firstItem="aqP-yC-bRw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="gmh-mq-9NO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WYq-o7-BSi" secondAttribute="bottom" constant="28" id="hzQ-R5-9hY"/>
+                            <constraint firstItem="rqs-7h-0r1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="jAo-Ox-lSD"/>
+                            <constraint firstItem="WYq-o7-BSi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="jO5-F1-Y97"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MPX-Fu-U8N"/>
+                    <connections>
+                        <outlet property="displayedText" destination="PSB-95-zTE" id="bOU-XA-2I9"/>
+                        <outlet property="lb" destination="rqs-7h-0r1" id="VvZ-wa-xZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="360.2698650674663"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IuK-fB-1J1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GsF-hr-1W2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GQr-V4-59U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IIQ-cU-dQ8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Zz-Kn-dWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="161" y="362"/>
+        </scene>
+    </scenes>
+</document>
