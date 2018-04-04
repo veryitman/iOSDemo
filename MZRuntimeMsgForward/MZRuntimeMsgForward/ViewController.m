@@ -51,31 +51,6 @@ static NSString * const sCellId = @"m_cell";
     //[[self class] testClassMethod];
     //[self testInstanceMethod];
 #endif
-    
-    /// 两种添加 timer 的方式以及区别
-    {
-        NSRunLoop *runloop = [NSRunLoop currentRunLoop];
-        // 在 runLoop 中添加一个timer
-        // scheduledTimerWithTimeInterval 创建的 Timer 会自动加入到当前 Runloop 的default mode 当中.
-        [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(runTimer) userInfo:nil repeats:YES];
-        
-        // 等同于下面两行代码
-#if 0
-        NSTimer *timer = [NSTimer  timerWithTimeInterval:1 target:self selector:@selector(runTimer) userInfo:nil repeats:YES];
-        [runloop addTimer:timer forMode:NSDefaultRunLoopMode];
-#endif
-        
-        // 这种方式创建的 timer 不会自动加入当前 Runloop 当中, 需要手动添加进去
-        NSTimer *timer = [NSTimer timerWithTimeInterval:1 repeats:YES block:^(NSTimer *timer) {
-            NSLog(@"--veryitman--timerWithTimeInterval.");
-        }];
-        [runloop addTimer:timer forMode:NSRunLoopCommonModes];
-    }
-}
-
-- (void)runTimer {
-    
-    NSLog(@"--veryitman--runTimer.");
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -126,6 +101,7 @@ static NSString * const sCellId = @"m_cell";
     [self.navigationController pushViewController:page animated:YES];
 }
 
+#pragma mark - Test.
 
 + (void)testClassMethod
 {
